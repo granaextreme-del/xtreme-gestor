@@ -193,6 +193,22 @@
             font-weight: 500;
         }
         
+        /* Container para estatísticas - UMA ABAIXO DA OUTRA */
+        .stats-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        
         /* Depoimentos - TEXTO VISÍVEL */
         .testimonial {
             background: white;
@@ -285,6 +301,14 @@
             .hero-logo-bg {
                 max-width: 300px;
             }
+            
+            .stat-item {
+                padding: 15px;
+            }
+            
+            .stats-number {
+                font-size: 2.2rem;
+            }
         }
     </style>
 </head>
@@ -298,7 +322,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://i.ibb.co/kgS4m24K" 
+                <img src="https://i.ibb.co/kgS4m24K/logo.jpg" 
                      alt="Logo xtreme gestor de tráfego" 
                      height="45">
             </a>
@@ -324,7 +348,7 @@
     <!-- Logo e Slogan -->
     <section class="logo-container">
         <div class="container">
-            <img src="https://i.ibb.co/kgS4m24K" 
+            <img src="https://i.ibb.co/kgS4m24K/logo.jpg" 
                  alt="Logo xtreme gestor de tráfego" 
                  class="logo">
             <p class="slogan">Faço sua empresa aparecer no Google, Instagram e Facebook. Crio sites e apps personalizados.</p>
@@ -333,7 +357,7 @@
 
     <!-- Hero Section com logo no fundo -->
     <section class="hero">
-        <img src="https://i.ibb.co/kgS4m24K" 
+        <img src="https://i.ibb.co/kgS4m24K/logo.jpg" 
              alt="Logo xtreme gestor de tráfego" 
              class="hero-logo-bg">
         <div class="container hero-content">
@@ -388,7 +412,7 @@
             <h2 class="section-title">Resultados de Tráfego Pago</h2>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="https://i.ibb.co/MDt0pFRV" 
+                    <img src="https://i.ibb.co/MDt0pFRV/meta1.jpg" 
                          class="case-image" 
                          alt="Resultados de Campanhas Meta Ads"
                          loading="lazy">
@@ -396,18 +420,20 @@
                 <div class="col-md-6">
                     <h3>Alta Performance em Meta Ads</h3>
                     <p>Campanhas otimizadas que geram resultados concretos com custo baixo por conversa.</p>
-                    <div class="row mt-4">
-                        <div class="col-4 text-center">
+                    
+                    <!-- ESTATÍSTICAS UMA ABAIXO DA OUTRA -->
+                    <div class="stats-container">
+                        <div class="stat-item">
                             <div class="stats-number">R$0,71</div>
                             <div class="stats-label">Custo por Conversa</div>
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="stat-item">
                             <div class="stats-number">55+</div>
-                            <div class="stats-label">Conversas</div>
+                            <div class="stats-label">Conversas Iniciadas</div>
                         </div>
-                        <div class="col-4 text-center">
+                        <div class="stat-item">
                             <div class="stats-number">4.956</div>
-                            <div class="stats-label">Alcance</div>
+                            <div class="stats-label">Pessoas Alcançadas</div>
                         </div>
                     </div>
                 </div>
@@ -421,7 +447,7 @@
             <h2 class="section-title">Otimização Google Meu Negócio</h2>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="https://i.ibb.co/39MH8tb8" 
+                    <img src="https://i.ibb.co/39MH8tb8/gmb1.jpg" 
                          class="case-image" 
                          alt="Resultados Google Meu Negócio"
                          loading="lazy">
@@ -454,7 +480,7 @@
             <h2 class="section-title">Desenvolvimento de Sites</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <img src="https://i.ibb.co/K3htf1r" 
+                    <img src="https://i.ibb.co/K3htf1r/site1.jpg" 
                          class="case-image" 
                          alt="Site desenvolvido"
                          loading="lazy">
@@ -462,7 +488,7 @@
                     <p>Layout moderno e responsivo</p>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <img src="https://i.ibb.co/nH45dRj" 
+                    <img src="https://i.ibb.co/nH45dRj/site2.jpg" 
                          class="case-image" 
                          alt="Outro projeto de site"
                          loading="lazy">
