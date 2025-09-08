@@ -30,17 +30,18 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        /* Texto piscante no cabeçalho */
+        /* Texto piscante no cabeçalho - MAIOR E MAIS VISÍVEL */
         .blinking-text {
             animation: blink 2s infinite;
             font-weight: bold;
             color: #25D366 !important;
-            font-size: 1.2rem;
+            font-size: 1.4rem !important;
+            text-shadow: 0 0 10px rgba(37, 211, 102, 0.8);
         }
         
         @keyframes blink {
             0% { opacity: 1; }
-            50% { opacity: 0.5; }
+            50% { opacity: 0.7; }
             100% { opacity: 1; }
         }
         
@@ -61,6 +62,13 @@
             opacity: 0.1;
             z-index: 1;
             max-width: 500px;
+            animation: piscarLogo 3s infinite;
+        }
+        
+        @keyframes piscarLogo {
+            0% { opacity: 0.1; }
+            50% { opacity: 0.15; }
+            100% { opacity: 0.1; }
         }
         
         .hero-content {
@@ -81,6 +89,36 @@
         .btn-whatsapp:hover {
             background: #128C7E;
             transform: scale(1.05);
+        }
+        
+        /* Botão do WhatsApp flutuante - AUMENTADO */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 34px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
         
         .service-card {
@@ -155,6 +193,7 @@
             font-weight: 500;
         }
         
+        /* Depoimentos - TEXTO VISÍVEL */
         .testimonial {
             background: white;
             padding: 35px;
@@ -162,10 +201,19 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             margin: 25px 0;
             transition: transform 0.3s;
+            color: #333 !important;
         }
         
         .testimonial:hover {
             transform: translateY(-5px);
+        }
+        
+        .testimonial p {
+            color: #555 !important;
+        }
+        
+        .testimonial strong {
+            color: #0066cc !important;
         }
         
         .social-proof {
@@ -173,35 +221,6 @@
             color: white;
             padding: 80px 0;
             text-align: center;
-        }
-        
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background: var(--secondary);
-            color: white;
-            border-radius: 50%;
-            width: 65px;
-            height: 65px;
-            text-align: center;
-            line-height: 65px;
-            font-size: 28px;
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-            transition: all 0.3s;
-            animation: pulse 2s infinite;
-        }
-        
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
         }
         
         .form-control {
@@ -253,14 +272,14 @@
             }
             
             .whatsapp-float {
-                width: 55px;
-                height: 55px;
-                line-height: 55px;
-                font-size: 24px;
+                width: 65px;
+                height: 65px;
+                line-height: 65px;
+                font-size: 30px;
             }
             
             .blinking-text {
-                font-size: 1rem;
+                font-size: 1.1rem !important;
             }
             
             .hero-logo-bg {
@@ -270,21 +289,21 @@
     </style>
 </head>
 <body>
-    <!-- Botão Flutuante do WhatsApp -->
+    <!-- Botão Flutuante do WhatsApp - AUMENTADO -->
     <a href="https://wa.me/5534998329922" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Navbar com texto piscante -->
+    <!-- Navbar com texto piscante - MAIOR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://i.ibb.co/FqntWJqn/IMG-20250908-WA0024.jpg" 
+                <img src="https://i.ibb.co/kgS4m24K" 
                      alt="Logo xtreme gestor de tráfego" 
                      height="45">
             </a>
             
-            <!-- Texto piscante no cabeçalho -->
+            <!-- Texto piscante no cabeçalho - MAIOR -->
             <div class="navbar-text ms-auto blinking-text">
                 Matheus xtreme gestor de tráfego
             </div>
@@ -305,7 +324,7 @@
     <!-- Logo e Slogan -->
     <section class="logo-container">
         <div class="container">
-            <img src="https://i.ibb.co/FqntWJqn/IMG-20250908-WA0024.jpg" 
+            <img src="https://i.ibb.co/kgS4m24K" 
                  alt="Logo xtreme gestor de tráfego" 
                  class="logo">
             <p class="slogan">Faço sua empresa aparecer no Google, Instagram e Facebook. Crio sites e apps personalizados.</p>
@@ -314,7 +333,7 @@
 
     <!-- Hero Section com logo no fundo -->
     <section class="hero">
-        <img src="https://i.ibb.co/FqntWJqn/IMG-20250908-WA0024.jpg" 
+        <img src="https://i.ibb.co/kgS4m24K" 
              alt="Logo xtreme gestor de tráfego" 
              class="hero-logo-bg">
         <div class="container hero-content">
@@ -369,7 +388,7 @@
             <h2 class="section-title">Resultados de Tráfego Pago</h2>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="https://i.ibb.co/DD4XSp53/IMG-20250907-WA0116.jpg" 
+                    <img src="https://i.ibb.co/MDt0pFRV" 
                          class="case-image" 
                          alt="Resultados de Campanhas Meta Ads"
                          loading="lazy">
@@ -402,7 +421,7 @@
             <h2 class="section-title">Otimização Google Meu Negócio</h2>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="https://i.ibb.co/pXxLffrj/IMG-20250908-WA0062.jpg" 
+                    <img src="https://i.ibb.co/39MH8tb8" 
                          class="case-image" 
                          alt="Resultados Google Meu Negócio"
                          loading="lazy">
@@ -435,26 +454,26 @@
             <h2 class="section-title">Desenvolvimento de Sites</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <img src="https://i.ibb.co/5xnKDF8t/IMG-20250908-WA0063.jpg" 
+                    <img src="https://i.ibb.co/K3htf1r" 
                          class="case-image" 
-                         alt="Site Arca Guincho"
+                         alt="Site desenvolvido"
                          loading="lazy">
-                    <h4 class="mt-3">Arca Guincho</h4>
-                    <p>Site profissional para serviço de guincho 24 horas</p>
+                    <h4 class="mt-3">Site Profissional</h4>
+                    <p>Layout moderno e responsivo</p>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <img src="https://i.ibb.co/zHxpqyCL/IMG-20250908-WA0064.jpg" 
+                    <img src="https://i.ibb.co/nH45dRj" 
                          class="case-image" 
                          alt="Outro projeto de site"
                          loading="lazy">
                     <h4 class="mt-3">Site Personalizado</h4>
-                    <p>Layout moderno e responsivo</p>
+                    <p>Design adaptado para cada negócio</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção: Prova Social -->
+    <!-- Seção: Prova Social - TEXTO VISÍVEL -->
     <section class="social-proof">
         <div class="container">
             <h2 class="text-white mb-5">O que nossos clientes dizem</h2>
