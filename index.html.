@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MD Soluções Digitais</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
+        h1 { color: #0066cc; }
+        .whatsapp { background: #25D366; color: white; padding: 15px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>MD Soluções Digitais</h1>
+    <p><strong>Especialista em Tráfego Pago, Criação de Sites e Apps</strong></p>
+    <p>Gestão de Meta ADS e Google ADS para gerar LEADS e VENDAS para seu negócio.</p>
+    <p>Site oficial em desenvolvimento.</p>
+    <a class="whatsapp" href="https://wa.me/5534998329922" target="_blank">Fale comigo no WhatsApp</a>
+</body>
+</html>
