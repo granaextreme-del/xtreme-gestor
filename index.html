@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xtreme gestor de tráfego - Especialista em Google, Meta ADS e Criação de Sites</title>
+    <title>Matheus xtreme gestor de tráfego - Especialista em Google, Meta ADS e Criação de Sites</title>
     <meta name="description" content="Geramos leads e vendas através de gestão de tráfego, criação de sites e apps personalizados. Faça sua empresa aparecer no Google, Instagram e Facebook.">
     <meta name="keywords" content="gestor de tráfego, meta ads, google ads, criação de sites, google meu negócio, aplicativos">
     <!-- Bootstrap 5 CSS -->
@@ -30,11 +30,42 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
+        /* Texto piscante no cabeçalho */
+        .blinking-text {
+            animation: blink 2s infinite;
+            font-weight: bold;
+            color: #25D366 !important;
+            font-size: 1.2rem;
+        }
+        
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, #004d99 100%);
             color: white;
             padding: 100px 0;
             text-align: center;
+            position: relative;
+        }
+        
+        /* Logo destacada no fundo do hero */
+        .hero-logo-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
+            z-index: 1;
+            max-width: 500px;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
         }
         
         .btn-whatsapp {
@@ -227,6 +258,14 @@
                 line-height: 55px;
                 font-size: 24px;
             }
+            
+            .blinking-text {
+                font-size: 1rem;
+            }
+            
+            .hero-logo-bg {
+                max-width: 300px;
+            }
         }
     </style>
 </head>
@@ -236,7 +275,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Navbar -->
+    <!-- Navbar com texto piscante -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -244,6 +283,12 @@
                      alt="Logo xtreme gestor de tráfego" 
                      height="45">
             </a>
+            
+            <!-- Texto piscante no cabeçalho -->
+            <div class="navbar-text ms-auto blinking-text">
+                Matheus xtreme gestor de tráfego
+            </div>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -267,9 +312,12 @@
         </div>
     </section>
 
-    <!-- Hero Section -->
+    <!-- Hero Section com logo no fundo -->
     <section class="hero">
-        <div class="container">
+        <img src="https://i.ibb.co/FqntWJqn/IMG-20250908-WA0024.jpg" 
+             alt="Logo xtreme gestor de tráfego" 
+             class="hero-logo-bg">
+        <div class="container hero-content">
             <h1 class="display-4 fw-bold">Soluções Digitais Completas</h1>
             <p class="lead">Geramos LEADS e VENDAS através de estratégias digitais integradas</p>
             <a href="https://wa.me/5534998329922" class="btn btn-whatsapp btn-lg">
